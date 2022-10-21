@@ -14,7 +14,7 @@ const adicionarTarefa = (evento)=>{
     const tarefa = document.createElement('li');
 
     //atribuindo o style
-    //tarefa.classList.add('taks');
+    tarefa.classList.add('tarefa');
 
     //capturando o valor digitado
     //const conteudo = `<div>${valor}</div>`;

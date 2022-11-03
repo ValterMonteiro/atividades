@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Formulário de Pagamento</title>
+</head>
+
+<body>
+    <main class="container form-container">
+        <div class="credit-card">
+            <div class="credit-card-front">
+                <div class="card-type">
+                    Cartão de Crédito
+                </div>
+    
+                <img class="flag" src="./visa-logo.png">
+    
+                <div class="card-number">
+                    #### #### #### ####
+                </div>
+                <div class="card-holder">
+                    Fulano de Tal
+                </div>
+                <div class="expiration">
+                    06/2021
+                </div>
+            </div>
+            <div class="credit-card-back">
+                <div class="stripe"></div>
+                <div class="ccv-block">
+                    123
+                </div>
+                <div class="flag">
+                    <img class="flag" src="./visa-logo.png">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./js/formulario-pagamento.js"></script>
+</body>
+
+</html>

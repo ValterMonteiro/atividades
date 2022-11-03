@@ -1,6 +1,4 @@
-body{
-    background-color: red;
-}
+
 .credit-card{
     --padding:15px;
     padding: var(--padding);
@@ -74,4 +72,7 @@ body{
     position: absolute;
     right: var(--padding);
     bottom: var(--padding);
+}
+body{
+    background-color: red;
 }

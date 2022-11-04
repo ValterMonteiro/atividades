@@ -1,4 +1,13 @@
 
+.form-container{
+    width: 100%;
+    display: flex;
+    
+}
+.form-login{
+    width: 30vw;
+}
+
 .credit-card{
     --padding:15px;
     padding: var(--padding);
@@ -72,7 +81,4 @@
     position: absolute;
     right: var(--padding);
     bottom: var(--padding);
-}
-body{
-    background-color: red;
 }

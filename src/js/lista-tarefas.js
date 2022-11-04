@@ -9,7 +9,7 @@ const adicionarTarefa = (evento) => {
     //selecionando os elementos
     const listaTarefa = document.querySelector('#lista-tarefas');
     const btnAdicionar = document.querySelector('#input-nova-tarefa');
-    const valor = btnAdicionar.value;
+    const descricaoTarefa = btnAdicionar.value;
 
     //percorrendo o dom e criando lista
     const tarefa = document.createElement('li');
@@ -22,9 +22,9 @@ const adicionarTarefa = (evento) => {
 
     //acessando e colocando a nova tarefa no app
     tarefa.innerHTML = `
-    <div>${valor}</div>
-    <button class="btn-excluir">Excluir</button>
+    <div>${descricaoTarefa}</div>
     `
+    //<button class="btn-excluir">Excluir</button>
 
     //atribuindo a tarefa a lista
     listaTarefa.appendChild(tarefa);
@@ -43,12 +43,13 @@ novaTarefa.addEventListener('click', adicionarTarefa)
 const excluirTarefa = () => {
 
     //criando elemetno
-    const botaoExcluir = document.createElement('btn-excluir');
+    const botaoExcluir = document.createElement('button');
     
     botaoExcluir.innerText = 'Excluir';
 
     // adicionar um atributo ao elemento
-    botaoExcluir.setAttribute('className', 'Excluir');
+    //let teste = document.querySelector('li');
+    botaoExcluir.className = 'btn-excluir';
 
     //adicionando evento
     botaoExcluir.addEventListener('click', (evento)=>{        
@@ -65,15 +66,3 @@ const excluirTarefa = () => {
     return botaoExcluir;
    
 }
-
-/* const deletarTarefa = (evento)=>{
-
-    const botaoDeleta = evento.target;
-    
-    const tarefaExcluir = botaoDeleta.parentElement;
-
-    tarefaExcluir.remove();
-
-    return botaoDeleta;    
-
-} */

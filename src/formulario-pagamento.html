@@ -9,51 +9,57 @@
 </head>
 
 <body>
+    <!-- Cabeçalho e Menu de Navegação-->
+    <nav class="container-fluid" id="menu"></nav>
+    <!-- Fim do  Cabeçalho e Menu de Navegação-->
     <main class="container form-container">
-        <h2>Detalhes do Pagamento</h2>
-        <form action="#" method="post" class="form-login">
-            <label>Número do Cartão:
-                <input type="email" required />
-            </label>
-            <label>Nome:
-                <input type="password" required />
-            </label>
-            <label>Data de Vencimento:
-                <input type="password" required />
-            </label>
-            <label>Código de Segurança(CCV):
-                <input type="password" required />
-            </label>
-            <button>Confirmar</button>
-        </form>
-        <div class="credit-card">
-            <div class="credit-card-front">
-                <div class="card-type">
-                    Cartão de Crédito
-                </div>
-    
-                <img class="flag" src="./visa-logo.png">
-    
-                <div class="card-number">
-                    #### #### #### ####
-                </div>
-                <div class="card-holder">
-                    Fulano de Tal
-                </div>
-                <div class="expiration">
-                    06/2021
-                </div>
-            </div>
-            <div class="credit-card-back">
-                <div class="stripe"></div>
-                <div class="ccv-block">
-                    123
-                </div>
-                <div class="flag">
+        <!-- Conteúdo Aqui-->
+        <article>
+            <h2>Detalhes do Pagamento</h2>
+            <form action="#" method="post" class="form-login">
+                <label for="">Numero do Cartão:
+                    <input type="text">
+                </label>
+                <label for="">Nome: 
+                    <input type="text">
+                </label>
+                <label for="">Data de Vencimento:
+                    <input type="text">
+                </label>
+                <label for="">Código de Segurança(CCV):
+                    <input type="text">
+                </label>
+                <button>Confirmar</button>
+            </form>
+            <div class="credit-card">
+                <div class="credit-card-front">
+                    <div class="card-type">
+                        Cartão de Crédito
+                    </div>
+        
                     <img class="flag" src="./visa-logo.png">
+        
+                    <div class="card-number">
+                        #### #### #### ####
+                    </div>
+                    <div class="card-holder">
+                        Fulano de Tal
+                    </div>
+                    <div class="expiration">
+                        06/2021
+                    </div>
+                </div>
+                <div class="credit-card-back">
+                    <div class="stripe"></div>
+                    <div class="ccv-block">
+                        123
+                    </div>
+                    <div class="flag">
+                        <img class="flag" src="./visa-logo.png">
+                    </div>
                 </div>
             </div>
-        </div>
+        </article>        
     </main>
     <script type="module" src="./js/formulario-pagamento.js"></script>
 </body>

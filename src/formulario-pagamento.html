@@ -12,21 +12,23 @@
     <!-- Cabeçalho e Menu de Navegação-->
     <nav class="container-fluid" id="menu"></nav>
     <!-- Fim do  Cabeçalho e Menu de Navegação-->
-    <main class="container form-container">
+    <main class="container ">
         <!-- Conteúdo Aqui-->
-        <article>
+        <div class="titulo-form">
             <h2>Detalhes do Pagamento</h2>
+        </div>
+        <div class="form-container">
             <form action="#" method="post" class="form-login">
                 <label for="">Numero do Cartão:
                     <input type="text">
                 </label>
-                <label for="">Nome: 
+                <label for="">Nome:
                     <input type="text">
                 </label>
-                <label for="">Data de Vencimento:
+                <label class="dtVencimento" for="">Data de Vencimento:
                     <input type="text">
                 </label>
-                <label for="">Código de Segurança(CCV):
+                <label class="CodSeguranca" for="">Código de Segurança(CCV):
                     <input type="text">
                 </label>
                 <button>Confirmar</button>
@@ -36,9 +38,9 @@
                     <div class="card-type">
                         Cartão de Crédito
                     </div>
-        
+
                     <img class="flag" src="./visa-logo.png">
-        
+
                     <div class="card-number">
                         #### #### #### ####
                     </div>
@@ -59,7 +61,8 @@
                     </div>
                 </div>
             </div>
-        </article>        
+        </div>
+
     </main>
     <script type="module" src="./js/formulario-pagamento.js"></script>
 </body>

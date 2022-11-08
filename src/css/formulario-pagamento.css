@@ -1,13 +1,47 @@
 
+/* Título do formulário */
+.titulo-form{
+    text-align: center;
+}
+
+.titulo-form h2{
+    color:var(--primary);
+    font-weight: normal;
+
+}
+
+/* Container do formulário */
 .form-container{
     width: 100%;
     display: flex;
+    justify-content: space-around; 
     
-}
-.form-login{
-    width: 30vw;
+    padding: 0;
 }
 
+.form-login{
+    width: 30vw;
+    font-size: 0.75rem;
+    color:black;
+}
+
+.form-login label{
+    padding: none;
+    margin: 0;
+    font-weight: bold;
+
+}
+
+.dtVencimento {
+    width: 15vw;
+}
+
+.CodSeguranca{
+    
+    width: 15vw;
+}
+
+/* Cartão de Crédito */
 .credit-card{
     --padding:15px;
     padding: var(--padding);

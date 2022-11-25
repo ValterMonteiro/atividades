@@ -19,41 +19,41 @@
         </div>
         <div class="form-container">
             <form action="#" method="post" class="form-login">
-                <label for="">Numero do Cartão:
-                    <input type="text">
+                <label id="numeroCartão" for="">Numero do Cartão:
+                    <input id="inputNumberCard" class="input-numero" type="number">
                 </label>
                 <label for="">Nome:
-                    <input type="text">
+                    <input class="input-nome" type="text">
                 </label>
                 <label class="dtVencimento" for="">Data de Vencimento:
-                    <input type="text">
+                    <input class="input-data" type="date">
                 </label>
                 <label class="CodSeguranca" for="">Código de Segurança(CCV):
-                    <input type="text">
+                    <input class="input-CodSeguranca" type="text">
                 </label>
-                <button>Confirmar</button>
+                <button id="btConfirmar">Confirmar</button>
             </form>
-            <div class="credit-card">
-                <div class="credit-card-front">
+            <div class="credit-card" data-card>
+                <div id="credit-card" class="credit-card-front">
                     <div class="card-type">
                         Cartão de Crédito
                     </div>
 
                     <img class="flag" src="./visa-logo.png">
 
-                    <div class="card-number">
+                    <div id="card-number" class="card-number">
                         #### #### #### ####
                     </div>
-                    <div class="card-holder">
+                    <div class="card-holder" id="card-holder">
                         Fulano de Tal
                     </div>
-                    <div class="expiration">
+                    <div class="expiration" id="expiration">
                         06/2021
                     </div>
                 </div>
                 <div class="credit-card-back">
                     <div class="stripe"></div>
-                    <div class="ccv-block">
+                    <div id="ccv-blok" class="ccv-block">
                         123
                     </div>
                     <div class="flag">
@@ -62,7 +62,6 @@
                 </div>
             </div>
         </div>
-
     </main>
     <script type="module" src="./js/formulario-pagamento.js"></script>
 </body>

@@ -20,16 +20,48 @@
         <div class="form-container">
             <form action="#" method="post" class="form-login">
                 <label id="numeroCartão" for="">Numero do Cartão:
-                    <input id="inputNumberCard" class="input-numero" type="number">
+                    <input maxlength="16" id="inputNumberCard" class="input-numero" type="text">
                 </label>
                 <label for="">Nome:
                     <input class="input-nome" type="text">
                 </label>
-                <label class="dtVencimento" for="">Data de Vencimento:
-                    <input class="input-data" type="date">
-                </label>
+                <label class="dtVencimento" for="">Data de Vencimento:</label>
+                <div class="flex-box informacaoVencimento">
+                        <!-- <input class="input-data" type="date" name="data"> -->
+                        <select name="" id="month-input" class="input-mes">
+                            <option value="mes" selected disabled>Mês</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select name="" id="input-ano" class="input-ano">
+                            <option value="ano" selected disabled>Ano</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            <option value="2031">2031</option>
+                            <option value="2032">2032</option>
+                            <option value="2033">2033</option>
+                        </select>                    
+                    
+                </div>
                 <label class="CodSeguranca" for="">Código de Segurança(CCV):
-                    <input class="input-CodSeguranca" type="text">
+                    <input maxlength="3" class="input-CodSeguranca" type="text">
                 </label>
                 <button id="btConfirmar">Confirmar</button>
             </form>
@@ -47,8 +79,11 @@
                     <div class="card-holder" id="card-holder">
                         Fulano de Tal
                     </div>
-                    <div class="expiration" id="expiration">
-                        06/2021
+                    <div class="expiration-mes" id="expiration-mes">
+                        MM
+                    </div>
+                    <div class="expiration-ano" id="expiration-ano">
+                        AAAA
                     </div>
                 </div>
                 <div class="credit-card-back">

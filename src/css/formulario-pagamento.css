@@ -35,7 +35,18 @@
 .dtVencimento {
     width: 15vw;
 }
-
+.informacaoVencimento{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+}
+.input-mes{
+    margin-right: 5px;
+}
+.input-ano{
+    margin-left: 5px;
+}
 .CodSeguranca{
     
     width: 15vw;
@@ -61,6 +72,8 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform .4s ease-out;
 }
 .credit-card-front div{
     position: absolute;
@@ -86,10 +99,20 @@
     bottom: var(--padding);
     font-size: 12px;
 }
-.credit-card-front .expiration{
+.credit-card-front .expiration-mes{
+    /* right: var(--padding); */
+    bottom: var(--padding);
+    right: 70px;
+}
+.credit-card-front .expiration-ano{
     right: var(--padding);
     bottom: var(--padding);
+    margin-right: auto;
 }
+.credit-card-front:nth-child(1){
+
+}
+
 .credit-card-back{
     position: absolute;
     width: 100%;
@@ -98,6 +121,8 @@
     left: 0;
     transform: rotateY(180deg);
     backface-visibility: hidden;
+    transform: perspective(1000px) rotateY( 180deg);
+    transition: transform .4s ease-out;
 }
 .credit-card-back .stripe{
     background-color: #D9D9D9;
